@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Desenvolvedor Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+        </div>
+    </div>
+
+    <!-- Botão de tema -->
+    <div class="theme-switch">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navegação -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo-text">Portfólio<span>.</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="text-content">
+                    <h1 class="glitch" data-text="Olá, eu sou">Olá, eu sou</h1>
+                    <h2 class="name">Pedro !</h2>
+                    <h3 class="profession">Desenvolvedor Web</h3>
+                    <p class="description">Criando experiências digitais incríveis com código limpo e design moderno.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">Ver Projetos</a>
+                        <a href="#contact" class="btn secondary-btn">Contato</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="geometric-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Sou um desenvolvedor web apaixonado por criar soluções digitais inovadoras e funcionais. Com experiência em desenvolvimento front-end e back-end, estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.</p>
+                    <p>Minha abordagem combina criatividade com pensamento analítico para resolver problemas complexos e entregar projetos de alta qualidade que atendam às necessidades dos usuários e clientes.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <h3>Nome:</h3>
+                            <p>Pedro Alves De Souza Araújo</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Email:</h3>
+                            <p>ipedro.contaoo@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Localização:</h3>
+                            <p>João Pessoa, Brasil</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Disponibilidade:</h3>
+                            <p>Freelance / Contrato</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ipedrosouzza" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pedro-alves-9b3425307/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/code.bble/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="curriculo/curriculo_pedroalves.pdf" target="_blank" class="btn primary-btn download-cv">Download CV <i class="fas fa-download"></i></a>
+                </div>
+                <div class="about-visual">
+                    <div class="experience-card">
+                        <div class="card-content">
+                            <span class="number">1+</span>
+                            <span class="text">Anos de Experiência</span>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>
+function Developer() {
+  this.name = "Pedro Alves";
+  this.skills = ["HTML", "CSS", "JavaScript"];
+  this.passion = "Criar experiências incríveis";
+  
+  this.code = function() {
+    return "Transformando ideias em realidade";
+  }
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Minhas Habilidades</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-target="frontend">Front-end</button>
+                    <button class="tab-btn" data-target="backend">Back-end</button>
+                    <button class="tab-btn" data-target="tools">Ferramentas</button>
+                </div>
+                <div class="skills-tab-content">
+                    <div class="tab-pane active" id="frontend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <h3>HTML5</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="55%"></div>
+                                </div>
+                                <span class="skill-percent">55%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <h3>CSS3</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="40%"></div>
+                                </div>
+                                <span class="skill-percent">40%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <h3>JavaScript</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="35%"></div>
+                                </div>
+                                <span class="skill-percent">35%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                <h3>React</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="30%"></div>
+                                </div>
+                                <span class="skill-percent">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="backend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                                <h3>Node.js</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="15%"></div>
+                                </div>
+                                <span class="skill-percent">15%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <h3>JavaScript</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="35%"></div>
+                                </div>
+                                <span class="skill-percent">35%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                                <h3>Express</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="10%"></div>
+                                </div>
+                                <span class="skill-percent">10%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                                <h3>Firebase</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="5%"></div>
+                                </div>
+                                <span class="skill-percent">5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tools">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                <h3>Git</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="45%"></div>
+                                </div>
+                                <span class="skill-percent">45%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                                <h3>Figma</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="55%"></div>
+                                </div>
+                                <span class="skill-percent">55%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                                <h3>CLI</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="10%"></div>
+                                </div>
+                                <span class="skill-percent">10%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                                <h3>CI/CD</h3>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="10%"></div>
+                                </div>
+                                <span class="skill-percent">10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="project-title"> Landing Page "FocusFlow"</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">Este projeto apresenta o design e desenvolvimento de uma landing page moderna para o aplicativo fictício FocusFlow. A proposta foca em uma experiência de usuário clara e intuitiva, com uma estrutura visual baseada em hierarquia tipográfica, ícones circulares para etapas, cores contrastantes e espaçamento confortável. A página segue o conceito de "design orientado à ação", conduzindo o visitante em três passos simples para entender o produto. Foi aplicada responsividade completa, garantindo consistência em desktop e dispositivos móveis.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <!-- <span class="tech-tag">Node.js</span> -->
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://ipedrosouzza.github.io/Landinpage/" target="_blank" class="btn project-btn">Ver Projeto</a>
+                            <a href="https://github.com/ipedrosouzza/Landinpage.git" target="_blank" class="btn project-btn-outline">Código <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <div class="project-pattern pattern-1"></div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="project-card" data-category="app">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="project-title">Rede-Social</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">O projeto simula funcionalidades como postagens, curtidas, comentários e perfis de usuários. Utiliza Flexbox e Grid para layout, variáveis CSS para temas, e scripts JS para interatividade. Totalmente responsivo, o projeto é ideal para demonstrar domínio de front-end puro e boas práticas de organização de código.</p>
+                            <div class="project-tech">
+                                <!-- <span class="tech-tag">React</span> -->
+                                <!-- <span class="tech-tag">Firebase</span> -->
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://ipedrosouzza.github.io/Rede-Social/" target="_blank" class="btn project-btn">Ver Projeto</a>
+                            <a href="https://github.com/ipedrosouzza/Rede-Social.git" target="_blank" class="btn project-btn-outline">Código <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <div class="project-pattern pattern-2"></div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="project-title">Site Institucional</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">Site institucional desenvolvido com HTML, CSS e JavaScript, com foco em estrutura limpa, responsiva e funcional. O projeto conta com seções como apresentação da empresa, serviços, equipe, portfólio e formulário de contato. Utiliza Flexbox e Grid para layout, classes bem organizadas e variáveis CSS para manter consistência visual. Inclui animações suaves e interações simples para melhorar a experiência do usuário. Ideal para mostrar domínio em front-end e criação de sites corporativos.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <!-- <span class="tech-tag">Chart.js</span> -->
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://ipedrosouzza.github.io/site-JK/
+                            " target="_blank" class="btn project-btn">Ver Projeto</a>
+                            <a href="https://github.com/ipedrosouzza/site-JK.git" target="_blank" class="btn project-btn-outline">Código <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <div class="project-pattern pattern-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Localização</h3>
+                            <p>João Pessoa, Paraíba, Brasil</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>ipedro.contatoo@gmail</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Telefone</h3>
+                            <p>+55 (83) 98143-8544</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Redes Sociais</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/ipedrosouzza" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/pedro-alves-9b3425307/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> -->
+                                <a href="https://www.instagram.com/code.bble/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                            <label for="name">Nome</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                            <label for="subject">Assunto</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
+                            <label for="message">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            Enviar Mensagem <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="form-message" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo-text">Portfólio<span>.</span></a>
+                    <p>Criando experiências digitais incríveis.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Inscreva-se para receber atualizações sobre novos projetos.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pedro Alves. Todos os direitos reservados.</p>
+                <div class="back-to-top">
+                    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
